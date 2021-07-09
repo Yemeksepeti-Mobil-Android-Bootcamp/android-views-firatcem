@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Homework_1</string>
+    <string name="find_deals_">Find deals for any season from cosy country homes to city flats</string>
+    <string name="text">Get started</string>
+    <string name="explore_as_">Explore as guest</string>
+    <string name="let_s_start">Lets  start here</string>
+    <string name="fill_in_you">Fill in your details to begin</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">or</string>
+    <string name="connect_wit"> Connect with Facebook</string>
+    <string name="connect_wit_g"> Connect with Google</string>
+    <string name="by_signing_">By signing in, I agree with Terms of Use and Privacy Policy</string>
+    <string name="fullname">Fullname</string>
+    <string name="user_name">Cristian</string>
+    <string name="mail">E-mail</string>
+    <string name="user_mail">Cristiandeb13@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="user_password">user password</string>
+</resources>

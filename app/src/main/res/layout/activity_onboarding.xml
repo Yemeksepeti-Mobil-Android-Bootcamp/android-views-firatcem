@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="812dp"
+    tools:context=".OnBoardingScreen"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginBottom="29dp"
+>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginLeft="161dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dots"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/strokedots"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginLeft="11dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dots"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginLeft="10dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dots"
+            />
+    </LinearLayout>
+
+    <!-- cardview için ilk satır işe yaramadı o yüzden corner radius kullandım -->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="-67dp"
+        android:background="@drawable/image2" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/cards"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="488dp"
+        android:layout_alignTop="@id/image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Best holiday deals -->
+            <TextView
+                android:id="@+id/best_holida"
+                android:layout_width="259dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="46dp"
+                android:fontFamily="@font/proxima_nova_font"
+                android:gravity="top"
+                android:text="Best holiday deals"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/find_details"
+                android:layout_width="284dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/inder"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/find_deals_"
+                android:textAppearance="@style/find_deals_"
+                android:translationY="-0.92sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/buttons"
+                android:id="@+id/button"
+                android:layout_width="280dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="36dp"
+                android:text="@string/text"
+                android:textAppearance="@style/text"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:translationY="-0.92sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/explore_as_"
+                android:layout_width="112dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginRight="131dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/explore_as_"
+                android:textAppearance="@style/explore_as_"
+                android:layout_marginBottom="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-1.92sp"
+                android:gravity="top"
+                />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
